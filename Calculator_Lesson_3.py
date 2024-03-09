@@ -1,8 +1,8 @@
 action = input("Choose your action (+, -, *, /): ")
 if action not in ('+', '-', '*', '/'):
     quit()
-num_1 = float(input("Number_1 = "))
-num_2 = float(input("Number_2 = "))
+num_1 = int(input("Number_1 = "))
+num_2 = int(input("Number_2 = "))
 if action == '+':
     print(num_1 + num_2)
 elif action == '-':
