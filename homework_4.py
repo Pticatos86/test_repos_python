@@ -40,7 +40,6 @@ info_str = input(f"If you want to convert: {button_1} enter '1',"
                  f" {button_3} enter '3',"
                  f" {button_4} enter '4' ")
 info_sum = float(input("Enter the sum of your currency: "))
-
 if info_str == '1':
     print(info_sum * rate_button_1)
 elif info_str == '2':
