@@ -1,28 +1,24 @@
-test_info_1 = "Please, write your name: "
-test_info_2 = "Write the letters you want to delete from your name?: "
-test_info_3 = "Your new name is: "
-answer_info_1 = input(f"{test_info_1}")
-answer_info_2 = input(f"{test_info_2}")
-answer_info_3 = answer_info_1.replace(answer_info_2, "")
-result_info = input(f"{test_info_3} {answer_info_3}")
+answer_info_1 = input("Please, write your name: ")
+answer_info_2 = input("Write the letters you want to delete from your name: ")
+result_info = answer_info_1.replace(answer_info_2, "")
+print(f"Your result is: {result_info} ")
 
 
 example_str = input("Please, enter your sentence: ")
 title_str = example_str.title()
-print(title_str)
+print(f"Result is {title_str}")
 
 
 regular_str = 'Python'
+print(regular_str)
 upend_str = regular_str[::-1]
-print(upend_str)
+print(f"Result is {upend_str}")
 
 
-entrance_str_1 = input("Please, enter your first comment: ")
-entrance_str_2 = input("Please, enter your second comment: ")
-if len(entrance_str_1) < len(entrance_str_2):
-    print("First comment is short")
-else:
-    print("First comment is long")
+str_1 = input("Write your first string: ")
+str_2 = input("Write your second string: ")
+result = str_1 == str_2
+print(f"String {str_1} and string {str_2} have equal result {result}")
 
 
 my_str = "I like eat sushi"
