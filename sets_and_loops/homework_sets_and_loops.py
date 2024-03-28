@@ -20,8 +20,8 @@ print(f"List {difference_list} contains elements that are absent in list {list_t
 
 """Solution of task 3"""
 list_nums = [2, 8, 8, 9, 12]
-set_nums = set(list_nums)
-if len(list_nums) == len(set_nums):
+
+if len(list_nums) == set(list_nums):
     print(f"Your entered numbers {list_nums} are unique")
 else:
     print(f" Your entered numbers {list_nums} are not unique")
