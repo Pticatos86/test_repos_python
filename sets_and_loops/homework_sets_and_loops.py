@@ -19,15 +19,8 @@ print(f"List {difference_list} contains elements that are absent in list {list_t
 
 
 """Solution of task 3"""
-count_nums = 0
-list_nums = []
-set_nums = set()
-while count_nums < 5:
-    input_nums = float(input("Please, enter your number: "))
-    count_nums += 1
-    list_nums.append(input_nums)
-    set_nums.add(input_nums)
-
+list_nums = [2, 8, 8, 9, 12]
+set_nums = set(list_nums)
 if len(list_nums) == len(set_nums):
     print(f"Your entered numbers {list_nums} are unique")
 else:
@@ -55,6 +48,6 @@ print(f"Number {minimal_num} is the minimal number in list {my_list_nums}")
 list_numbers = [78, -10, -500, 45, 0, 25]
 sum_numbers = 0
 for nums in list_numbers:
-    sum_numbers = sum_numbers + nums
+    sum_numbers += nums
 
 print(f" Sum of numbers from list {list_numbers} is {sum_numbers}")
