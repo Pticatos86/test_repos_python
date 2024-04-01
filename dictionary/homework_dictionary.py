@@ -11,8 +11,8 @@ for role, list_names in roles_dict.items():
     if check_name in list_names:
         print(f"Hello {role}")
         break
-    else:
-        print("Hello guest!")
+else:
+    print("Hello guest!")
 
 """Solution task 2"""
 params = {'v': 'some_id', 'list': 'some_list', 'index': '6', 't': 'Os'}
