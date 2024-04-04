@@ -31,8 +31,9 @@ with open('names.csv', 'r') as csv_file:
         writer.writeheader()
 
         for line in reader:
-            del line['first_name']
-            del line['last_name']
+            for key in list(line.keys()):
+                if key not in fieldnames:
+                    del line[key]
             writer.writerow(line)
 
 with open('email.csv', 'r') as new_csv_file:
