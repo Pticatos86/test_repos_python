@@ -1,6 +1,6 @@
 """Solution of task 1"""
 from Modules_and_packages.mathematics_function import add_num, minus_num, multiply_num, divide_num
-from Modules_and_packages.utils import validate_datatype, check_user_operation
+from Modules_and_packages.utils import check_user_operation, validate_datatype
 
 
 def calculate_numbers(num_1, num_2, operation):
