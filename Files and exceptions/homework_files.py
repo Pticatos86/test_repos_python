@@ -2,8 +2,8 @@
 import os
 
 print(os.getcwd())
-first_file_path = '../files and exceptions/first.txt'
-second_file_path = '../files and exceptions/second.txt'
+first_file_path = '/first.txt'
+second_file_path = '/second.txt'
 
 with open(first_file_path, 'w') as file_one:
     file_one.write("I am a little python teapot,\nShort and stout.\nHere is my handle,\nHere is my spout:)")
@@ -40,7 +40,7 @@ with open('email.csv', 'r') as new_csv_file:
     print(f"Result email column in file email.csv is:\n{new_csv_file.readlines()}")
 
 """Solution of task 3"""
-key_request = input("Please, enter your key dictionary: ")
+key_request = input("Please, enter your key Dictionary: ")
 
 assert key_request == key_request.lower(), "You must enter key in lower case"
 
