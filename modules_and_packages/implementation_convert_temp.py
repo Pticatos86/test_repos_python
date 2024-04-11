@@ -1,4 +1,4 @@
-from Modules_and_packages.mathematics_function import convert_temp
+from modules_and_packages.mathematics_function import convert_temp
 
 if __name__ == '__main__':
     result_conversion = convert_temp(100, 'F')
