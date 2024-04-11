@@ -16,7 +16,4 @@ elif action == '/':
 else:
     print("Enter valid operation and try again")
 
-print ("Hello, Github")
-
-
-
+print("Hello, Github")
