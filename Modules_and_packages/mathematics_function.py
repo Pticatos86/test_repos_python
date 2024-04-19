@@ -45,3 +45,19 @@ def convert_temp(value_temp: int, unit_temp='F' or 'C') -> float:
         return convert_fahrenheit_to_celsius(value_temp)
     else:
         raise ValueError("Invalid value, you need enter unit temp value 'F' or 'C'")
+
+
+def min_fn(*args: int) -> int:
+    minimal_value = args[0]
+    for arg in args:
+        if arg < minimal_value:
+            minimal_value = arg
+    return minimal_value
+
+
+def max_fn(*args: int) -> int:
+    maximal_value = args[0]
+    for arg in args:
+        if arg > maximal_value:
+            maximal_value = arg
+    return maximal_value
