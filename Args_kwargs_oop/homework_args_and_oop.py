@@ -32,21 +32,22 @@ class MafiaCompany:
                 f"Our contacts is {self.contacts}")
 
 
-restaurant_one = MafiaCompany('restaurant_one', 'Kyiv',
-                              "Bogdan Khmelnitsky street 27/1",
-                              "Italian and Japanese cuisine",
-                              "food delivery, organization of birthdays and holidays, "
-                              "service-'-50% I will pick it myself'",
-                              '10.00 - 22.00', '+380968888888')
+if __name__ == '__main__':
+    restaurant_one = MafiaCompany('restaurant_one', 'Kyiv',
+                                  "Bogdan Khmelnitsky street 27/1",
+                                  "Italian and Japanese cuisine",
+                                  "food delivery, organization of birthdays and holidays, "
+                                  "service-'-50% I will pick it myself'",
+                                  '10.00 - 22.00', '+380968888888')
 
-restaurant_two = MafiaCompany('restaurant_two', 'Dnipro',
-                              "Volodymyr Monomakh street 2 K",
-                              "Italian and Japanese cuisine",
-                              "food delivery, organization of birthdays and holidays,"
-                              "service-'-50% I will pick it myself'",
-                              '10.00 - 22.00', '+380967777777')
-print(f"Greeting to our guests - {restaurant_one.invite()}")
-print(f"Greeting to our guests - {restaurant_two.invite()}")
+    restaurant_two = MafiaCompany('restaurant_two', 'Dnipro',
+                                  "Volodymyr Monomakh street 2 K",
+                                  "Italian and Japanese cuisine",
+                                  "food delivery, organization of birthdays and holidays,"
+                                  "service-'-50% I will pick it myself'",
+                                  '10.00 - 22.00', '+380967777777')
+    print(f"Greeting to our guests - {restaurant_one.invite()}")
+    print(f"Greeting to our guests - {restaurant_two.invite()}")
 
-print(f"Additional proposition to our guests - {restaurant_one.delivery()}")
-print(f"Additional proposition to our guests - {restaurant_two.delivery()}")
+    print(f"Additional proposition to our guests - {restaurant_one.delivery()}")
+    print(f"Additional proposition to our guests - {restaurant_two.delivery()}")
