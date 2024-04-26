@@ -47,9 +47,6 @@ class MafiaEmployee:
                 f"job title is {self._job_title}, name is {self._name}, surname is {self._surname}, "
                 f"age is {self._age}")
 
-    def __add__(self):
-        return self
-
     @property
     def department(self) -> str:
         return self._department
@@ -86,7 +83,7 @@ class MafiaEmployee:
             raise ValueError("Name should contains only letters")
         self._surname = new_surname
 
-    def __calculate_bonus(self) -> int:
+    def __calculate_bonus(self) -> float:
         return self.__salary * self.__bonus // 100
 
     def calculate_salary(self) -> int:
